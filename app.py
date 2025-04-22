@@ -8,5 +8,6 @@ def hello():
     message = request.args.get('message', 'Давай дружить')
     return f"Hello {name}! {message}!"
 
+# Only run the development server if this file is executed directly
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000) 
